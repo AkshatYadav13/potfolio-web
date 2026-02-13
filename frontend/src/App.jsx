@@ -5,7 +5,7 @@ import { Toaster } from "sonner";
 import router from "./lib/router.jsx";
 
 function App() {
-  const { theme, initializeTheme, } = useAppStore();
+  const { theme, initializeTheme } = useAppStore();
 
   useEffect(() => {
     initializeTheme();

@@ -100,7 +100,7 @@ const MobileSidebar = () => {
   return (
     <Sheet>
       <SheetTrigger className="p-2 rounded-md hover:bg-green-50 dark:hover:bg-green-900/20 transition-colors">
-        <Menu className="w-6 h-6 text-green-700" />
+        <Menu className="w-6 h-6 text-green-700 dark:text-green-400" />
       </SheetTrigger>
 
       <SheetContent side="left" className="w-64 border-r border-green-100 dark:border-green-900">
@@ -118,7 +118,7 @@ const MobileSidebar = () => {
             to="/"
             className="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-green-50 dark:hover:bg-green-900/20 transition-colors text-green-900 dark:text-green-50 font-medium"
           >
-            <Home className="w-5 h-5 text-green-700" />
+            <Home className="w-5 h-5 text-green-700 dark:text-green-400" />
             Home
           </Link>
 
@@ -129,14 +129,14 @@ const MobileSidebar = () => {
                 to="/vendors"
                 className="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-green-50 dark:hover:bg-green-900/20 transition-colors text-green-900 dark:text-green-50 font-medium"
               >
-                <Store className="w-5 h-5 text-green-700" />
+                <Store className="w-5 h-5 text-green-700 dark:text-green-400" />
                 Vendors
               </Link>
               <Link
                 to="/cart"
                 className="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-green-50 dark:hover:bg-green-900/20 transition-colors text-green-900 dark:text-green-50 font-medium"
               >
-                <ShoppingCart className="w-5 h-5 text-green-700" />
+                <ShoppingCart className="w-5 h-5 text-green-700 dark:text-green-400" />
                 Cart
               </Link>
             </>
@@ -147,7 +147,7 @@ const MobileSidebar = () => {
               to="/vendor/items"
               className="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-green-50 dark:hover:bg-green-900/20 transition-colors text-green-900 dark:text-green-50 font-medium"
             >
-              <Package className="w-5 h-5 text-green-700" />
+              <Package className="w-5 h-5 text-green-700 dark:text-green-400" />
               Manage Items
             </Link>
           )}
@@ -157,7 +157,7 @@ const MobileSidebar = () => {
               to="/orders"
               className="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-green-50 dark:hover:bg-green-900/20 transition-colors text-green-900 dark:text-green-50 font-medium"
             >
-              <ClipboardList className="w-5 h-5 text-green-700" />
+              <ClipboardList className="w-5 h-5 text-green-700 dark:text-green-400" />
               Orders
             </Link>
           )}
@@ -173,14 +173,14 @@ const MobileSidebar = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-green-50 dark:hover:bg-green-900/20 transition-colors text-green-900 dark:text-green-50 font-medium"
               >
-                <BarChart3 className="w-5 h-5 text-green-700" />
+                <BarChart3 className="w-5 h-5 text-green-700 dark:text-green-400" />
                 Prediction Analytics
               </a>
               <Link
                 to="/vendor/policies"
                 className="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-green-50 dark:hover:bg-green-900/20 transition-colors text-green-900 dark:text-green-50 font-medium"
               >
-                <FileText className="w-5 h-5 text-green-700" />
+                <FileText className="w-5 h-5 text-green-700 dark:text-green-400" />
                 Gov Policies
               </Link>
             </>
@@ -211,7 +211,7 @@ const MobileSidebar = () => {
               to="/login"
               className="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-green-50 dark:hover:bg-green-900/20 transition-colors"
             >
-              <User className="w-5 h-5 text-green-700" />
+              <User className="w-5 h-5 text-green-700 dark:text-green-400" />
               <span className="font-medium text-green-900 dark:text-green-50">Login</span>
             </Link>
           )}
@@ -221,7 +221,7 @@ const MobileSidebar = () => {
             onClick={() => setTheme(theme === "light" ? "dark" : "light")}
             className="flex items-center gap-3 px-4 py-2 rounded-lg hover:bg-green-50 dark:hover:bg-green-900/20 transition-colors w-full text-left"
           >
-            {theme === "light" ? <Moon className="w-5 h-5 text-green-700" /> : <Sun className="w-5 h-5 text-green-700" />}
+            {theme === "light" ? <Moon className="w-5 h-5 text-green-700 dark:text-green-400" /> : <Sun className="w-5 h-5 text-green-700 dark:text-green-400" />}
             <span className="font-medium text-green-900 dark:text-green-50">{theme === "light" ? "Dark Mode" : "Light Mode"}</span>
           </button>
         </div>

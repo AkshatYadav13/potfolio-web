@@ -49,7 +49,7 @@ const Profile = () => {
     if (!user) {
         return (
             <div className="flex items-center justify-center min-h-[60vh]">
-                <Loader2 className="h-8 w-8 animate-spin text-green-600" />
+                <Loader2 className="h-8 w-8 animate-spin text-green-600 dark:text-green-400" />
             </div>
         );
     }
@@ -106,21 +106,21 @@ const Profile = () => {
                                 <div className="space-y-2">
                                     <Label htmlFor="fullName">Full Name</Label>
                                     <div className="relative">
-                                        <User className="absolute left-3 top-3 h-4 w-4 text-green-500" />
+                                        <User className="absolute left-3 top-3 h-4 w-4 text-green-500 dark:text-green-400" />
                                         <Input
                                             id="fullName"
                                             name="fullName"
                                             value={formData.fullName}
                                             onChange={handleChange}
                                             disabled={!isEditing}
-                                            className="pl-10 border-green-100 focus:ring-green-500"
+                                            className="pl-10 border-green-100 dark:border-gray-600 focus:ring-green-500 dark:bg-gray-700 dark:text-gray-100"
                                         />
                                     </div>
                                 </div>
                                 <div className="space-y-2">
                                     <Label htmlFor="email">Email Address</Label>
                                     <div className="relative">
-                                        <Mail className="absolute left-3 top-3 h-4 w-4 text-green-500" />
+                                        <Mail className="absolute left-3 top-3 h-4 w-4 text-green-500 dark:text-green-400" />
                                         <Input
                                             id="email"
                                             name="email"
@@ -128,28 +128,28 @@ const Profile = () => {
                                             value={formData.email}
                                             onChange={handleChange}
                                             disabled={!isEditing}
-                                            className="pl-10 border-green-100 focus:ring-green-500"
+                                            className="pl-10 border-green-100 dark:border-gray-600 focus:ring-green-500 dark:bg-gray-700 dark:text-gray-100"
                                         />
                                     </div>
                                 </div>
                                 <div className="space-y-2">
                                     <Label htmlFor="contact">Phone Number</Label>
                                     <div className="relative">
-                                        <Phone className="absolute left-3 top-3 h-4 w-4 text-green-500" />
+                                        <Phone className="absolute left-3 top-3 h-4 w-4 text-green-500 dark:text-green-400" />
                                         <Input
                                             id="contact"
                                             name="contact"
                                             value={formData.contact}
                                             onChange={handleChange}
                                             disabled={!isEditing}
-                                            className="pl-10 border-green-100 focus:ring-green-500"
+                                            className="pl-10 border-green-100 dark:border-gray-600 focus:ring-green-500 dark:bg-gray-700 dark:text-gray-100"
                                         />
                                     </div>
                                 </div>
                                 <div className="space-y-2">
                                     <Label htmlFor="location">Location</Label>
                                     <div className="relative">
-                                        <MapPin className="absolute left-3 top-3 h-4 w-4 text-green-500" />
+                                        <MapPin className="absolute left-3 top-3 h-4 w-4 text-green-500 dark:text-green-400" />
                                         <Input
                                             id="location"
                                             name="location"
@@ -157,7 +157,7 @@ const Profile = () => {
                                             onChange={handleChange}
                                             disabled={!isEditing}
                                             placeholder="e.g. New Delhi, India"
-                                            className="pl-10 border-green-100 focus:ring-green-500"
+                                            className="pl-10 border-green-100 dark:border-gray-600 focus:ring-green-500 dark:bg-gray-700 dark:text-gray-100"
                                         />
                                     </div>
                                 </div>
@@ -187,25 +187,25 @@ const Profile = () => {
                         <CardContent>
                             <div className="space-y-3">
                                 <div className="flex justify-between items-center text-sm">
-                                    <span className="text-gray-500">Role</span>
-                                    <span className="font-semibold text-green-700">{user.role}</span>
+                                    <span className="text-gray-500 dark:text-gray-400">Role</span>
+                                    <span className="font-semibold text-green-700 dark:text-green-400">{user.role}</span>
                                 </div>
                                 <div className="flex justify-between items-center text-sm">
-                                    <span className="text-gray-500">Member Since</span>
-                                    <span className="font-semibold">{new Date(user.createdAt).toLocaleDateString()}</span>
+                                    <span className="text-gray-500 dark:text-gray-400">Member Since</span>
+                                    <span className="font-semibold dark:text-gray-200">{new Date(user.createdAt).toLocaleDateString()}</span>
                                 </div>
                                 {user.role === "Vender" && (
                                     <div className="flex justify-between items-center text-sm">
-                                        <span className="text-gray-500">Vendor ID</span>
-                                        <span className="font-xs font-mono bg-white px-2 py-0.5 rounded border border-green-100 truncate max-w-[120px]">
+                                        <span className="text-gray-500 dark:text-gray-400">Vendor ID</span>
+                                        <span className="font-xs font-mono bg-white dark:bg-gray-700 px-2 py-0.5 rounded border border-green-100 dark:border-gray-600 truncate max-w-[120px] dark:text-gray-200">
                                             {user.venderId || "N/A"}
                                         </span>
                                     </div>
                                 )}
                                 {user.role === "Customer" && (
                                     <div className="flex justify-between items-center text-sm">
-                                        <span className="text-gray-500">Customer ID</span>
-                                        <span className="font-xs font-mono bg-white px-2 py-0.5 rounded border border-green-100 truncate max-w-[120px]">
+                                        <span className="text-gray-500 dark:text-gray-400">Customer ID</span>
+                                        <span className="font-xs font-mono bg-white dark:bg-gray-700 px-2 py-0.5 rounded border border-green-100 dark:border-gray-600 truncate max-w-[120px] dark:text-gray-200">
                                             {user.customerId || "N/A"}
                                         </span>
                                     </div>

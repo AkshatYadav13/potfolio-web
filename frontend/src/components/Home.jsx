@@ -8,10 +8,10 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="dark:bg-gray-900 min-h-screen bg-white font-sans selection:bg-emerald-100 selection:text-emerald-900">
+    <div className="min-h-screen bg-white dark:bg-gray-900 font-sans selection:bg-emerald-100 dark:selection:bg-emerald-900 selection:text-emerald-900 dark:selection:text-emerald-100">
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden pt-16 pb-20 lg:pt-32 lg:pb-32 bg-stone-50/50">
+      <section className="relative overflow-hidden pt-16 pb-20 lg:pt-32 lg:pb-32 bg-stone-50/50 dark:bg-gray-800/50">
         {/* Background Decorative Elements */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full max-w-7xl px-4 pointer-events-none">
           <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-emerald-100/50 rounded-full blur-3xl opacity-50" />
@@ -28,14 +28,14 @@ const Home = () => {
                 <span>Fresh Produce & Trusted Vendors</span>
               </div>
 
-              <h1 className="text-5xl lg:text-7xl font-extrabold text-stone-900 leading-[1.1] tracking-tight">
+              <h1 className="text-5xl lg:text-7xl font-extrabold text-stone-900 dark:text-gray-100 leading-[1.1] tracking-tight">
                 Fresh Produce, <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-green-500">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-green-500 dark:from-emerald-400 dark:to-green-400">
                   Trusted Vendors
                 </span>
               </h1>
 
-              <p className="text-lg lg:text-xl text-stone-600 leading-relaxed max-w-xl">
+              <p className="text-lg lg:text-xl text-stone-600 dark:text-gray-300 leading-relaxed max-w-xl">
                 Empowering Indian street vendors with modern digital tools. Get farm-fresh vegetables and fruits delivered from your neighborhood stall.
               </p>
 
@@ -76,7 +76,7 @@ const Home = () => {
                   <div className="flex items-center text-yellow-500">
                     {[1, 2, 3, 4, 5].map((i) => <Star key={i} className="h-4 w-4 fill-current" />)}
                   </div>
-                  <p className="text-sm text-stone-500 font-medium">Trusted by thousands of families</p>
+                  <p className="text-sm text-stone-500 dark:text-gray-400 font-medium">Trusted by thousands of families</p>
                 </div>
               </div>
             </div>
@@ -124,39 +124,39 @@ const Home = () => {
       </section>
 
       {/* Trust & Stats Section */}
-      <section className="py-20 bg-white relative">
+      <section className="py-20 bg-white dark:bg-gray-900 relative">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div className="p-8 rounded-3xl bg-emerald-50/50 border border-emerald-100/50 hover:bg-emerald-50 transition-colors shadow-sm">
-              <Users className="h-10 w-10 text-emerald-600 mx-auto mb-4" />
-              <h3 className="text-4xl font-black text-emerald-900 mb-2">5000+</h3>
-              <p className="text-emerald-700 font-bold">Active Vendors</p>
-              <p className="text-sm text-emerald-600/70 mt-2">Dignifying street vendors with tech</p>
+            <div className="p-8 rounded-3xl bg-emerald-50/50 dark:bg-gray-800 border border-emerald-100/50 dark:border-gray-700 hover:bg-emerald-50 dark:hover:bg-gray-700 transition-colors shadow-sm">
+              <Users className="h-10 w-10 text-emerald-600 dark:text-emerald-400 mx-auto mb-4" />
+              <h3 className="text-4xl font-black text-emerald-900 dark:text-gray-100 mb-2">5000+</h3>
+              <p className="text-emerald-700 dark:text-emerald-400 font-bold">Active Vendors</p>
+              <p className="text-sm text-emerald-600/70 dark:text-gray-400 mt-2">Dignifying street vendors with tech</p>
             </div>
-            <div className="p-8 rounded-3xl bg-emerald-600 text-white shadow-xl shadow-emerald-200">
-              <ShoppingBag className="h-10 w-10 text-emerald-100 mx-auto mb-4" />
+            <div className="p-8 rounded-3xl bg-emerald-600 dark:bg-emerald-700 text-white shadow-xl shadow-emerald-200 dark:shadow-emerald-900/50">
+              <ShoppingBag className="h-10 w-10 text-emerald-100 dark:text-emerald-50 mx-auto mb-4" />
               <h3 className="text-4xl font-black mb-2">50k+</h3>
-              <p className="text-emerald-100 font-bold uppercase tracking-widest text-sm">Happy Customers</p>
-              <p className="text-emerald-100/70 text-sm mt-2 font-medium leading-relaxed">Daily fresh deliveries across the city</p>
+              <p className="text-emerald-100 dark:text-emerald-50 font-bold uppercase tracking-widest text-sm">Happy Customers</p>
+              <p className="text-emerald-100/70 dark:text-emerald-100/80 text-sm mt-2 font-medium leading-relaxed">Daily fresh deliveries across the city</p>
             </div>
-            <div className="p-8 rounded-3xl bg-emerald-50/50 border border-emerald-100/50 hover:bg-emerald-50 transition-colors shadow-sm">
-              <CheckCircle2 className="h-10 w-10 text-emerald-600 mx-auto mb-4" />
-              <h3 className="text-4xl font-black text-emerald-900 mb-2">100%</h3>
-              <p className="text-emerald-700 font-bold">Hygiene Standards</p>
-              <p className="text-sm text-emerald-600/70 mt-2">Connecting farm to your kitchen</p>
+            <div className="p-8 rounded-3xl bg-emerald-50/50 dark:bg-gray-800 border border-emerald-100/50 dark:border-gray-700 hover:bg-emerald-50 dark:hover:bg-gray-700 transition-colors shadow-sm">
+              <CheckCircle2 className="h-10 w-10 text-emerald-600 dark:text-emerald-400 mx-auto mb-4" />
+              <h3 className="text-4xl font-black text-emerald-900 dark:text-gray-100 mb-2">100%</h3>
+              <p className="text-emerald-700 dark:text-emerald-400 font-bold">Hygiene Standards</p>
+              <p className="text-sm text-emerald-600/70 dark:text-gray-400 mt-2">Connecting farm to your kitchen</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Footer Section */}
-      <section className="py-20 bg-stone-900 text-white overflow-hidden relative">
+      <section className="py-20 bg-stone-900 dark:bg-gray-950 text-white overflow-hidden relative">
         <div className="absolute top-0 right-0 w-[50%] h-full bg-emerald-600/10 blur-[120px]" />
         <div className="container mx-auto px-4 text-center relative z-10">
           <h2 className="text-4xl md:text-5xl font-black mb-6 max-w-3xl mx-auto leading-tight">
             Ready to change the way you shop for groceries?
           </h2>
-          <p className="text-stone-400 text-lg mb-10 max-w-xl mx-auto">
+          <p className="text-stone-400 dark:text-gray-400 text-lg mb-10 max-w-xl mx-auto">
             Experience the digital stall revolution today. Fresh, reliable, and just a click away.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-6">
@@ -167,7 +167,7 @@ const Home = () => {
             >
               Start Exploring
             </Button>
-            <p className="text-stone-500 font-medium">Or <span className="text-white cursor-pointer hover:underline underline-offset-4 font-bold" onClick={() => navigate('/register')}>Register your business</span></p>
+            <p className="text-stone-500 dark:text-gray-500 font-medium">Or <span className="text-white dark:text-gray-100 cursor-pointer hover:underline underline-offset-4 font-bold" onClick={() => navigate('/register')}>Register your business</span></p>
           </div>
         </div>
       </section>
