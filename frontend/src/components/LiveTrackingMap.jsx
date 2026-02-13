@@ -21,7 +21,7 @@ export const LiveTrackingMap = ({
 
   return (
     <div className="w-full h-[400px] mt-3 rounded-xl overflow-hidden shadow-md">
-      <MapContainer center={center} zoom={16} className="w-full h-full">
+      <MapContainer center={center} zoom={16} className="w-full h-full z-0">
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

@@ -8,7 +8,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-white font-sans selection:bg-emerald-100 selection:text-emerald-900">
+    <div className="dark:bg-gray-800 min-h-screen bg-white font-sans selection:bg-emerald-100 selection:text-emerald-900">
 
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-16 pb-20 lg:pt-32 lg:pb-32 bg-stone-50/50">
